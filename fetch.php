@@ -19,6 +19,7 @@ $result = $collection->find();
 <thead>
 <tr>
   <th scope="col">ID</th>
+  <th scope="col">Student ID</th>
   <th scope="col">First Name</th>
   <th scope="col">Last Name</th>
   <th scope="col">Birthdate</th>
@@ -35,6 +36,7 @@ foreach ($result as $student)
     ?>
 <tr>
   <td><?=$student['_id']?></td>
+  <td><?=$student['studentId']?></td>
   <td><?=$student['firstName']?></td>
   <td><?=$student['lastName']?></td>
   <td><?=$student['birthdate']?></td>
